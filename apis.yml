@@ -1,7 +1,17 @@
 aid: z1
 name: Z1
-description: Z1 is a company surfaced as a portfolio company of 500-global and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Z1 is the API Evangelist network profile for the consumer social gaming app
+  operated by Bunch Live, Inc., known publicly as Bunch and now rebranded as
+  Mini Party (mini.party). The product lets friends hang out, play party games,
+  and video chat together in real time on mobile, and connects with external
+  services such as Discord. Bunch raised early venture funding (including a
+  $3.8M round) and is tracked here as a 500 Global portfolio company. Bunch
+  formerly operated a Bunch Developer Platform (the "Party Kit" voice/video SDK
+  for iOS, Android, and Unity plus a Party Reservation API), but that developer
+  program has been discontinued and the company currently publishes no public
+  developer API, OpenAPI, or developer portal — this profile captures its
+  identity, legal surface, and domain-security posture only.
 url: https://raw.githubusercontent.com/api-evangelist/z1/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,11 +19,34 @@ x-backed-by:
 - 500-global
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-aka:
+- Bunch
+- Mini Party
+- Bunch Live, Inc.
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://bunch.live/assets/og.jpg
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Consumer
+- Gaming
+- Social
+- Video Chat
+- Party Games
+- Mobile
+- Entertainment
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +54,20 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/z1-domain-security.yml
 - type: Website
   url: https://bunch.live
+- type: TermsOfService
+  url: https://mini.party/terms
+- type: PrivacyPolicy
+  url: https://mini.party/privacy
+- type: Support
+  url: mailto:support@mini.party
+- type: SignUp
+  url: https://apps.apple.com/us/app/id1294869021
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
